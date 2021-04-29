@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+        <title> {{ title }} Cosine Similarity </title>
+    </head>
+    <body>
+        <h1>Hello please input two sentences to find out similarity scores</h1>
+        <form method="POST">
+            Document 1: <textarea name = "text1" rows = "5" cols="30"></textarea><br><br>
+            Document 2: <textarea name = "text2" rows = "5" cols="30"></textarea><br><br><br>
+            <input type="submit"> 
+        </form>
+        {% if final %}
+        <h2> The Cosine Similarity between '{{ text1 }}' and '{{ text2 }}' is {{ final }}!</h2>
+        {% else %}
+        <h2></h2>
+        {% endif %}
+    </body>
+</html>
+
+
+
+
